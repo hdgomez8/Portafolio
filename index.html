@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hoja de Vida</title>
+  <style>
+    /* Establecemos una fuente y una tipografía */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@800&display=swap');
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Establecemos un diseño para los encabezados */
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* Establecemos un diseño para los párrafos */
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    /* Establecemos un diseño para las listas */
+    ul {
+      list-style-type: none;
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    /* Establecemos un diseño para las secciones */
+    .section {
+      background-color: #F5F5F5;
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+
+    /* Establecemos un diseño para los títulos de las secciones */
+    .section-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Establecemos un diseño para los elementos de la hoja de vida */
+    .job-title {
+      font-weight: 600;
+    }
+
+    .job-dates {
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #f0f0f0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">Acerca de mí</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#education">Educación</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h1>Hector David Gomez Pertuz</h1>
+    <h2>Desarrollador web Full Stack</h2>
+    <p>Correo electrónico: Hdgomez0@gmail.com</p>
+    <p>Teléfono: 304-674-3571</p>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Resumen</h2>
+    <p>Un breve resumen de mi experiencia y habilidades</p>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Experiencia laboral</h2>
+    <div class="job">
+      <h3 class="job-title">Cargo - Empresa</h3>
+      <p class="job-dates">Fechas</p>
+      <ul>
+        <li>
+          Responsabilidades y logros en este trabajo</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3 class="job-title">Cargo - Empresa</h3>
+      <p class="job-dates">Fechas</p>
+      <ul>
+        <li>Responsabilidades y logros en este trabajo</li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="section">
+    <h2 class="section-title">Educación</h2>
+    <div class="education">
+      <h3 class="degree-title">Título - Instituto</h3>
+      <p class="degree-dates">Fechas</p>
+      <ul>
+        <li>Información sobre el programa de estudios</li>
+      </ul>
+    </div>
+    <div class="education">
+      <h3 class="degree-title">Título - Instituto</h3>
+      <p class="degree-dates">Fechas</p>
+      <ul>
+        <li>Información sobre el programa de estudios</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Habilidades</h2>
+    <ul>
+      <li>Habilidad 1</li>
+      <li>Habilidad 2</li>
+      <li>Habilidad 3</li>
+    </ul>
+  </section>
+</body>
+
+<section class="section">
+  <h2 class="section-title">Contacto</h2>
+  <form id="contact-form">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea>
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+
+</html>
